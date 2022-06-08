@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de atualização windows</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</head>
+<body onload="inciarContagem()">
+    <main class="tela">
+        <div class="loader" style="vertical-align:middle;padding-top:2px;">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="text-center">
+            <p>Trabalhando nas atualizações <span id="numero"></span>%</p>
+            <p>Não desligue o computador. Isso pode demorar um pouco</p>
+        </div>
+        <div class="text-bottom">
+            <p>O computador será reiniciado várias vezes</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+    </main>
+</body>
+</html>
